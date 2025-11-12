@@ -296,6 +296,8 @@ public class Prospector : MonoBehaviour
                 ScoreManager.TALLY(eScoreEvent.draw);
                 break;
             case eCardState.mine:
+
+            
                 // Clicking a card in the mine will check if it’s a valid play
                 bool validMatch = true;  // Initially assume that it’s valid 
 

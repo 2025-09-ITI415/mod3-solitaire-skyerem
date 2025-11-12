@@ -41,32 +41,5 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-<<<<<<< Updated upstream
-=======
-  - name: Row0
-    uniqueID: 2856279151
-    locked: 0
-  - name: Row1
-    uniqueID: 3270514637
-    locked: 0
-  - name: Row2
-    uniqueID: 188962653
-    locked: 0
-  - name: Row3
-    uniqueID: 2400228343
-    locked: 0
-  - name: Row4
-    uniqueID: 3141687115
-    locked: 0
-  - name: Discard
-    uniqueID: 601687799
-    locked: 0
-  - name: Draw
-    uniqueID: 870830593
-    locked: 0
-  - name: Target
-    uniqueID: 1004420391
-    locked: 0
   m_RenderingLayers:
   - Default
->>>>>>> Stashed changes
