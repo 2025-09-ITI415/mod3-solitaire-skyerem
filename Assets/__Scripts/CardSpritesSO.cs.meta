@@ -3,7 +3,15 @@ guid: 17f649412499541bda991cf4444574ff
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - cardBack: {instanceID: 0}
+  - cardBackGold: {instanceID: 0}
+  - cardFront: {instanceID: 0}
+  - cardFrontGold: {instanceID: 0}
+  - suitClub: {fileID: 21300000, guid: f0ad869431897b0499b520aefece23c9, type: 3}
+  - suitDiamond: {fileID: 21300000, guid: 0d94df477fa7d4b4e928c8f5d7e81fd7, type: 3}
+  - suitHeart: {fileID: 21300000, guid: 69546164771b2e14ca9a83d0e3d0129b, type: 3}
+  - suitSpade: {fileID: 21300000, guid: e2667a32162deda42828a923897df0be, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
