@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;   // We’ll need this line later in the chap
 [RequireComponent(typeof(JsonParseLayout))]
 public class Prospector : MonoBehaviour
 {
-    private static Prospector S; // A private Singleton for Prospector
+    public static Prospector S; // A private Singleton for Prospector
 
     [Header("Dynamic")]
     public List<CardProspector> drawPile;

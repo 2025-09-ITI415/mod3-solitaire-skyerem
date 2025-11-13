@@ -21,12 +21,34 @@ public class CardProspector : Card
     /// </summary>
     override public void OnMouseUpAsButton()
     {
-        // Uncomment the next line to call the base class version of this method
-        // base.OnMouseUpAsButton();                                          // a
-        // Call the CardClicked method on the Prospector Singleton
-        Pyramid.CARD_CLICKED(this);
-        Prospector.CARD_CLICKED(this);
-        base.OnMouseUpAsButton();// b
-    }
+        MatchMode selector = FindObjectOfType<MatchMode>();
 
+        if (selector != null)
+        {
+            // Prospector mode
+            if (selector.useAdjacentTo && Prospector.S != null && Prospector.S.gameObject.activeInHierarchy)
+            {
+                Prospector.CARD_CLICKED(this);
+            }
+            // Pyramid mode
+            else if (!selector.useAdjacentTo && Pyramid.P != null && Pyramid.P.gameObject.activeInHierarchy)
+            {
+                Pyramid.CARD_CLICKED(this);
+            }
+            else
+            {
+                Debug.LogWarning("No active mode detected or Singleton missing.");
+            }
+        }
+        else
+        {
+            // this lets uf have a fallback if no selector is found
+            if (Prospector.S != null)
+                Prospector.CARD_CLICKED(this);
+            else if (Pyramid.P != null)
+                Pyramid.CARD_CLICKED(this);
+        }
+
+        base.OnMouseUpAsButton();
+    }
 }

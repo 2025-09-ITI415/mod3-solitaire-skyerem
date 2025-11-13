@@ -63,20 +63,12 @@ public class Pyramid : MonoBehaviour
         }
         return (listCP);
     }
-
-    /// <summary>
-    /// Pulls a single card from the beginning of the drawPile and returns it
-    /// Note: There is no protection against trying to draw from an empty pile!
-    /// </summary>
-    /// <returns>The top card of drawPile</returns>
     CardProspector Draw()
     {
         CardProspector cp = drawPile[0]; // Pull the 0th CardProspector
         drawPile.RemoveAt(0);            // Then remove it from drawPile
         return (cp);                      // And return it
     }
-
-    /// <summary>
     /// Positions the initial tableau of cards, a.k.a. the "mine"
     /// </summary>
     void LayoutMine()

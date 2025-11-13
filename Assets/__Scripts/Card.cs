@@ -282,17 +282,17 @@ public class Card : MonoBehaviour
     public bool IsValidMatch(Card otherCard)
     {
         if (!faceUp || !otherCard.faceUp) return false;
-
-        // If CardPyramid is active, use the 13 rule
-        if (Pyramid.P != null)
+        MatchMode selector = FindObjectOfType<MatchMode>();
+        if (selector != null && selector.useAdjacentTo)
         {
-            if (rank == 13 || otherCard.rank == 13) return true;
-            return (rank + otherCard.rank == 13);
+            // Use the Prospector adjacent rule
+            return AdjacentTo(otherCard, true);
         }
         else
         {
-            // Otherwise, use the Prospector adjacent rule
-            return AdjacentTo(otherCard, true);
+            // Use Pyramid 13 rule
+            if (rank == 13 || otherCard.rank == 13) return true;
+            return (rank + otherCard.rank == 13);
         }
     }
 }
