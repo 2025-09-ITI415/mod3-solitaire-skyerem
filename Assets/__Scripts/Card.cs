@@ -11,11 +11,12 @@ public class Card : MonoBehaviour
     public string colS = "Black"; // or "Red". Name of the Color
     public GameObject back; // The GameObject of the back of the card
     public JsonCard def; // The card layout as defined in JSON_Deck.json
-
+    public GameObject selected;
     // This List holds all of the Decorator GameObjects
     public List<GameObject> decoGOs = new List<GameObject>();
     // This List holds all of the Pip GameObjects
     public List<GameObject> pipGOs = new List<GameObject>();
+    public bool hascover; 
 
     /// <summary>
     /// Creates this Card’s visuals based on suit and rank.
@@ -191,6 +192,12 @@ public class Card : MonoBehaviour
         back = _tGO;
     }
 
+    public bool selectable
+    {
+        get { return (!back.activeSelf); }                                   // a
+        set { back.SetActive(!value); }
+    }
+
     private SpriteRenderer[] spriteRenderers;
 
     /// <summary>
@@ -261,7 +268,7 @@ public class Card : MonoBehaviour
     /// <param name="otherCard">The card to compare to</param>
     /// <param name="wrap">If true (default) Ace and King wrap</param>
     /// <returns>true, if the cards are adjacent</returns>
-    public bool AdjacentTo(Card otherCard, bool wrap = true)
+    /*public bool AdjacentTo(Card otherCard, bool wrap = true)
     {
         // If either card is face-down, it’s not a valid match.
         if (!faceUp || !otherCard.faceUp) return (false);
@@ -277,6 +284,6 @@ public class Card : MonoBehaviour
         }
 
         return (false);  // Otherwise, return false
-    }
+    }*/
 
 }

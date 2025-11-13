@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // This enum defines the variable type eCardState with four named values.      // a
-public enum eCardState { drawpile, mine, target, discard }
+public enum eCardState { drawpile, mine, target, targ2, discard, blank }
 
 public class CardProspector : Card
 { // Make CardProspector extend Card        // b
@@ -21,9 +21,7 @@ public class CardProspector : Card
     /// </summary>
     override public void OnMouseUpAsButton()
     {
-        // Uncomment the next line to call the base class version of this method
-        // base.OnMouseUpAsButton();                                          // a
-        // Call the CardClicked method on the Prospector Singleton
+       
         Prospector.CARD_CLICKED(this);
         base.OnMouseUpAsButton();// b
     }

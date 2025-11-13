@@ -10,7 +10,7 @@ public class JsonLayout
 {
     public Vector2 multiplier;
     public List<JsonLayoutSlot> slots;
-    public JsonLayoutPile drawPile, discardPile;
+    public JsonLayoutPile drawPile, discardPile, FinishPile;
 }
 
 /// <summary>
