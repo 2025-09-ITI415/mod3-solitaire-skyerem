@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;   // We’ll need this line later in the chap
 
 [RequireComponent(typeof(Deck))]                                              // a
 [RequireComponent(typeof(JsonParseLayout))]
-public class CardPyramid : MonoBehaviour
+public class Pyramid : MonoBehaviour
 {
-    private static CardPyramid S; // A private Singleton for Prospector
+    public static Pyramid P; // A private Singleton for Prospector
 
     [Header("Dynamic")]
     public List<CardProspector> drawPile;
@@ -28,8 +28,8 @@ public class CardPyramid : MonoBehaviour
     void Start()
     {
         // Set the private Singleton. We’ll use this later.
-        if (S != null) Debug.LogError("Attempted to set S more than once!");  // b
-        S = this;
+        if (P != null) Debug.LogError("Attempted to set S more than once!");  // b
+        P = this;
 
         jsonLayout = GetComponent<JsonParseLayout>().layout;
 
@@ -103,7 +103,9 @@ public class CardPyramid : MonoBehaviour
                                         // Make the CardProspector a child of layoutAnchor
             cp.transform.SetParent(layoutAnchor);
 
-            // Convert the last char of the layer string to an int (e.g. "Row 0")
+            // Convert the last char of the layer string to an int (e.g. "
+            //
+            // 0")
             int z = int.Parse(slot.layer[slot.layer.Length - 1].ToString());  // c
 
             // Set the localPosition of the card based on the slot information
@@ -243,8 +245,8 @@ public class CardPyramid : MonoBehaviour
             case eCardState.drawpile:
                 // Clicking *any* card in the drawPile will draw the next card
                 // Call two methods on the Prospector Singleton S
-                S.MoveToTarget(S.Draw());  // Draw a new target card
-                S.UpdateDrawPile();          // Restack the drawPile
+                P.MoveToTarget(P.Draw());  // Draw a new target card
+                P.UpdateDrawPile();          // Restack the drawPile
                 break;
             case eCardState.mine:
                 // Clicking a card in the mine will check if it’s a valid play
@@ -254,18 +256,20 @@ public class CardPyramid : MonoBehaviour
                 if (!cp.faceUp) validMatch = false;
 
                 // If it’s not an adjacent rank, it’s not valid
-                if (!cp.AdjacentTo(S.target)) validMatch = false;            // b
+                if (!cp.IsValidMatch(P.target)) validMatch = false;            // b
 
                 if (validMatch)
                 {        // If it’s a valid card
-                    S.mine.Remove(cp);   // Remove it from the tableau List
-                    S.MoveToTarget(cp);  // Make it the target card
-
-                    S.SetMineFaceUps();  // Be sure to add this line!!
+                    P.mine.Remove(cp);   // Remove it from the tableau List
+                    P.MoveToTarget(cp);  // Make it the target card
                 }
                 break;
         }
     }
 
+
 }
+
+
+
 

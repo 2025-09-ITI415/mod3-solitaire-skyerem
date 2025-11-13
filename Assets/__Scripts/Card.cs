@@ -278,5 +278,20 @@ public class Card : MonoBehaviour
 
         return (false);  // Otherwise, return false
     }
+    public bool IsValidMatch(Card otherCard)
+    {
+        if (!faceUp || !otherCard.faceUp) return false;
 
+        // If CardPyramid is active, use the 13 rule
+        if (Pyramid.P != null)
+        {
+            if (rank == 13 || otherCard.rank == 13) return true;
+            return (rank + otherCard.rank == 13);
+        }
+        else
+        {
+            // Otherwise, use the Prospector adjacent rule
+            return AdjacentTo(otherCard, true);
+        }
+    }
 }

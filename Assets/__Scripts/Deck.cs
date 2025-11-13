@@ -18,6 +18,7 @@ public class Deck : MonoBehaviour
     private JsonParseDeck jsonDeck;
 
     static public GameObject SPRITE_PREFAB { get; private set; }
+    public object deckXML { get; internal set; }
 
     /* TESTING MODE REMOVED
     void Start()
@@ -68,7 +69,11 @@ public class Deck : MonoBehaviour
                 c = MakeCard(suits[i], j);                                 // e
                 cards.Add(c);
 
-                // This aligns the cards in nice rows for testing
+                // This aligns the cards in nice
+                //
+                //
+                //
+                // s for testing
                 c.transform.position =
                 new Vector3((j - 7) * 3, (i - 1.5f) * 4, 0);
             }
@@ -116,4 +121,8 @@ public class Deck : MonoBehaviour
         refCards = tCards;                                                    // c
     }
 
+    internal void InitDeck(object text)
+    {
+        throw new System.NotImplementedException();
+    }
 }

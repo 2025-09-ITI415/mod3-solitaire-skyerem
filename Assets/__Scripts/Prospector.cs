@@ -103,7 +103,9 @@ public class Prospector : MonoBehaviour
                                         // Make the CardProspector a child of layoutAnchor
             cp.transform.SetParent(layoutAnchor);
 
-            // Convert the last char of the layer string to an int (e.g. "Row 0")
+            // Convert the last char of the layer string to an int (e.g. "
+            //
+            // 0")
             int z = int.Parse(slot.layer[slot.layer.Length - 1].ToString());  // c
 
             // Set the localPosition of the card based on the slot information
