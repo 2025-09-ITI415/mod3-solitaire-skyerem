@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17f649412499541bda991cf4444574ff, type: 3}
   m_Name: CardSprites
   m_EditorClassIdentifier: 
-  cardBack: {fileID: 21300000, guid: a8185ed8d47594bb8a3b8e2d9233f769, type: 3}
+  cardBack: {fileID: 21300000, guid: 111b5e640e4eaf041b5e1e1afc5799cf, type: 3}
   cardBackGold: {fileID: 21300000, guid: 8ecf4828943064b3a96f6258b54c0f11, type: 3}
   cardFront: {fileID: 21300000, guid: 873a7658b7ec742228520c7b15510f4d, type: 3}
   cardFrontGold: {fileID: 21300000, guid: 944dc539459fe4109b973bd4c97f68ee, type: 3}
-  suitClub: {fileID: 21300000, guid: 2df9280d89630b94786d38a7a958e710, type: 3}
-  suitDiamond: {fileID: 21300000, guid: 29518b28804054c45b5b6aacf42a1ce9, type: 3}
-  suitHeart: {fileID: 21300000, guid: 07ba26b662911974fb2ce17d5f044981, type: 3}
-  suitSpade: {fileID: 21300000, guid: 43566f2d1a1e1ad4bbe351bde11609c8, type: 3}
+  suitClub: {fileID: 21300000, guid: 8364f0d9c1eb2f149b363f477836c101, type: 3}
+  suitDiamond: {fileID: 21300000, guid: 9455144e5bbd61047aa98f06ad5063da, type: 3}
+  suitHeart: {fileID: 21300000, guid: bc51a2bd4577c324e84b29c2a5f85278, type: 3}
+  suitSpade: {fileID: 21300000, guid: 60ac6d65828a3a949b42483af1495f4b, type: 3}
   faceSprites:
   - {fileID: 21300000, guid: 0044ad2d99ea04858a663c3491cc9a91, type: 3}
   - {fileID: 21300000, guid: c10418368653749f796f63e87cde78ec, type: 3}
