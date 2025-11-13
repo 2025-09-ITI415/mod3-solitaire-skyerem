@@ -49,13 +49,14 @@
                 {
                     "type": "pip",
                     "loc": {
-                        "x": 0.0,
-                        "y": 0.0,
+                        "x": 0.016,
+                        "y": 0,
                         "z": 0.0
                     },
                     "flip": false,
-                    "scale": 2.0
+                    "scale": 4.0
                 }
+                
             ]
         },
         {
@@ -65,22 +66,12 @@
                 {
                     "type": "pip",
                     "loc": {
-                        "x": 0.0,
-                        "y": 1.1,
+                        "x": 0.016,
+                        "y": 0,
                         "z": 0.0
                     },
                     "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.0,
-                        "y": -1.1,
-                        "z": 0.0
-                    },
-                    "flip": true,
-                    "scale": 1.0
+                    "scale": 4.0
                 }
             ]
         },
@@ -91,32 +82,12 @@
                 {
                     "type": "pip",
                     "loc": {
-                        "x": 0.0,
-                        "y": 1.1,
+                        "x": 0.016,
+                        "y": 0,
                         "z": 0.0
                     },
                     "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                    },
-                    "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.0,
-                        "y": -1.1,
-                        "z": 0.0
-                    },
-                    "flip": true,
-                    "scale": 1.0
+                    "scale": 4.0
                 }
             ]
         },
@@ -124,45 +95,15 @@
             "rank": 4,
             "face": "",
             "pips": [
-                {
+               {
                     "type": "pip",
                     "loc": {
-                        "x": -0.55,
-                        "y": 1.1,
+                        "x": 0.016,
+                        "y": 0,
                         "z": 0.0
                     },
                     "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": -0.55,
-                        "y": -1.1,
-                        "z": 0.0
-                    },
-                    "flip": true,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.55,
-                        "y": 1.1,
-                        "z": 0.0
-                    },
-                    "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.55,
-                        "y": -1.1,
-                        "z": 0.0
-                    },
-                    "flip": true,
-                    "scale": 1.0
+                    "scale": 4.0
                 }
             ]
         },
@@ -170,55 +111,15 @@
             "rank": 5,
             "face": "",
             "pips": [
-                {
+               {
                     "type": "pip",
                     "loc": {
-                        "x": -0.55,
-                        "y": 1.1,
+                        "x": 0.016,
+                        "y": 0,
                         "z": 0.0
                     },
                     "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": -0.55,
-                        "y": -1.1,
-                        "z": 0.0
-                    },
-                    "flip": true,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                    },
-                    "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.55,
-                        "y": 1.1,
-                        "z": 0.0
-                    },
-                    "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.55,
-                        "y": -1.1,
-                        "z": 0.0
-                    },
-                    "flip": true,
-                    "scale": 1.0
+                    "scale": 4.0
                 }
             ]
         },
@@ -226,65 +127,15 @@
             "rank": 6,
             "face": "",
             "pips": [
-                {
+               {
                     "type": "pip",
                     "loc": {
-                        "x": -0.55,
-                        "y": 1.1,
+                        "x": 0.016,
+                        "y": 0,
                         "z": 0.0
                     },
                     "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.55,
-                        "y": 1.1,
-                        "z": 0.0
-                    },
-                    "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": -0.55,
-                        "y": 0.0,
-                        "z": 0.0
-                    },
-                    "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.55,
-                        "y": 0.0,
-                        "z": 0.0
-                    },
-                    "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": -0.55,
-                        "y": -1.1,
-                        "z": 0.0
-                    },
-                    "flip": true,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.55,
-                        "y": -1.1,
-                        "z": 0.0
-                    },
-                    "flip": true,
-                    "scale": 1.0
+                    "scale": 4.0
                 }
             ]
         },
@@ -292,258 +143,53 @@
             "rank": 7,
             "face": "",
             "pips": [
-                {
+              {
                     "type": "pip",
                     "loc": {
-                        "x": -0.55,
-                        "y": 1.1,
+                        "x": 0.016,
+                        "y": 0,
                         "z": 0.0
                     },
                     "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.55,
-                        "y": 1.1,
-                        "z": 0.0
-                    },
-                    "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.0,
-                        "y": 0.55,
-                        "z": 0.0
-                    },
-                    "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": -0.55,
-                        "y": 0.0,
-                        "z": 0.0
-                    },
-                    "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.55,
-                        "y": 0.0,
-                        "z": 0.0
-                    },
-                    "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": -0.55,
-                        "y": -1.1,
-                        "z": 0.0
-                    },
-                    "flip": true,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.55,
-                        "y": -1.1,
-                        "z": 0.0
-                    },
-                    "flip": true,
-                    "scale": 1.0
+                    "scale": 4.0
                 }
             ]
         },
-        {
+        
+           {
+            
             "rank": 8,
             "face": "",
             "pips": [
                 {
                     "type": "pip",
                     "loc": {
-                        "x": -0.55,
-                        "y": 1.1,
+                        "x": 0.016,
+                        "y": 0,
                         "z": 0.0
                     },
                     "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.55,
-                        "y": 1.1,
-                        "z": 0.0
-                    },
-                    "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.0,
-                        "y": 0.55,
-                        "z": 0.0
-                    },
-                    "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": -0.55,
-                        "y": 0.0,
-                        "z": 0.0
-                    },
-                    "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.55,
-                        "y": 0.0,
-                        "z": 0.0
-                    },
-                    "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.0,
-                        "y": -0.55,
-                        "z": 0.0
-                    },
-                    "flip": true,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": -0.55,
-                        "y": -1.1,
-                        "z": 0.0
-                    },
-                    "flip": true,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.55,
-                        "y": -1.1,
-                        "z": 0.0
-                    },
-                    "flip": true,
-                    "scale": 1.0
+                    "scale": 4.0
                 }
-            ]
+             ]
         },
-        {
+        
+
+            {
+                
             "rank": 9,
             "face": "",
             "pips": [
                 {
                     "type": "pip",
                     "loc": {
-                        "x": -0.55,
-                        "y": 1.1,
+                        "x": 0.016,
+                        "y": 0,
                         "z": 0.0
                     },
                     "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.55,
-                        "y": 1.1,
-                        "z": 0.0
-                    },
-                    "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": -0.55,
-                        "y": 0.37,
-                        "z": 0.0
-                    },
-                    "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.55,
-                        "y": 0.37,
-                        "z": 0.0
-                    },
-                    "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                    },
-                    "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": -0.55,
-                        "y": -0.37,
-                        "z": 0.0
-                    },
-                    "flip": true,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.55,
-                        "y": -0.37,
-                        "z": 0.0
-                    },
-                    "flip": true,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": -0.55,
-                        "y": -1.1,
-                        "z": 0.0
-                    },
-                    "flip": true,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.55,
-                        "y": -1.1,
-                        "z": 0.0
-                    },
-                    "flip": true,
-                    "scale": 1.0
-                }
+                    "scale": 4.0
+                } 
             ]
         },
         {
@@ -553,102 +199,12 @@
                 {
                     "type": "pip",
                     "loc": {
-                        "x": -0.55,
-                        "y": 1.1,
+                        "x": 0.016,
+                        "y": 0,
                         "z": 0.0
                     },
                     "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.55,
-                        "y": 1.1,
-                        "z": 0.0
-                    },
-                    "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.0,
-                        "y": 0.73,
-                        "z": 0.0
-                    },
-                    "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": -0.55,
-                        "y": 0.37,
-                        "z": 0.0
-                    },
-                    "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.55,
-                        "y": 0.37,
-                        "z": 0.0
-                    },
-                    "flip": false,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": -0.55,
-                        "y": -0.37,
-                        "z": 0.0
-                    },
-                    "flip": true,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.55,
-                        "y": -0.37,
-                        "z": 0.0
-                    },
-                    "flip": true,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.0,
-                        "y": -0.73,
-                        "z": 0.0
-                    },
-                    "flip": true,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": -0.55,
-                        "y": -1.1,
-                        "z": 0.0
-                    },
-                    "flip": true,
-                    "scale": 1.0
-                },
-                {
-                    "type": "pip",
-                    "loc": {
-                        "x": 0.55,
-                        "y": -1.1,
-                        "z": 0.0
-                    },
-                    "flip": true,
-                    "scale": 1.0
+                    "scale": 4.0
                 }
             ]
         },

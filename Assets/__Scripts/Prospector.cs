@@ -45,7 +45,7 @@ public class Prospector : MonoBehaviour
         drawPile = ConvertCardsToCardProspectors(deck.cards);
 
         LayoutMine();
-
+        SetMineFaceUps();
        // MoveToTarget(Draw());
         UpdateDrawPile();
     }
@@ -138,6 +138,7 @@ public class Prospector : MonoBehaviour
     /// <param name="cp">The CardProspector to be moved</param>
     void MoveToDiscard(CardProspector cp)
     {
+      
         // Set the state of the card to discard
        // cp.state = eCardState.discard;
         discardPile.Add(cp);  // Add it to the discardPile List<>
@@ -163,11 +164,12 @@ public class Prospector : MonoBehaviour
     void MoveToTarget(CardProspector cp)
     {
         // If there is currently a target card, move it to discardPile
-       if (justdrawn != null) MoveToDiscard(justdrawn);
+       if (justdrawn != null){
+        justdrawn.selectable = false;     
+         MoveToDiscard(justdrawn);
+       }
 
         // Use MoveToDiscard to move the target card to the correct location
-        MoveToDiscard(cp);                                                    // c
-
         // Then set a few additional things to make cp the new target
         justdrawn = cp; // cp is the new target
         cp.state = eCardState.mine;
@@ -208,7 +210,25 @@ public class Prospector : MonoBehaviour
             cp.state = eCardState.drawpile;
             // Set depth sorting
             cp.SetSpriteSortingLayer(jsonLayout.drawPile.layer);
-            cp.SetSortingOrder(-10 * i);
+            cp.SetSortingOrder(discardPile.Count * 3);
+
+        }
+
+        if (drawPile.Count == 0){
+
+            CardProspector thiscp;
+            while( discardPile.Count > 0){
+                
+            thiscp = discardPile[0];
+            S.discardPile.Remove(discardPile[0]);  
+            
+            if(!drawPile.Contains(thiscp))
+             S.drawPile.Add(thiscp); 
+             
+             
+            } 
+            UpdateDrawPile();
+          
         }
     }
 
@@ -216,7 +236,8 @@ public class Prospector : MonoBehaviour
     /// This turns cards in the Mine face-up and face-down
     /// </summary>
     public void SetMineFaceUps()
-    {                                            // d
+    {                                    
+            // d
         CardProspector coverCP;
         foreach (CardProspector cp in mine)
         {
@@ -230,14 +251,26 @@ public class Prospector : MonoBehaviour
                 if (coverCP == null || coverCP.state == eCardState.mine)
                 {
                     selectable = false; // then this card is face-down
+                    break;
                 }
             }
             cp.selectable = selectable; // Set the value on the card
+           
         }
+
+
+       
     }
 
     public void MatchMove(CardProspector cp){
         FinishPile.Add(cp);
+
+         if (S.target != null){
+        S.target.state = eCardState.discard;
+         }
+        if (S.targ2 != null){
+        S.targ2.state = eCardState.discard;
+        }
         cp.SetLocalPos(new Vector3(
         jsonLayout.multiplier.x * jsonLayout.FinishPile.x,
         jsonLayout.multiplier.y * jsonLayout.FinishPile.y,
@@ -275,6 +308,8 @@ public class Prospector : MonoBehaviour
 
                  if (S.justdrawn != null){
                     if (S.justdrawn == S.target || S.justdrawn == S.targ2){
+                        S.justdrawn.state = eCardState.mine; 
+                        
                     return;
                  }
                  }
@@ -286,13 +321,19 @@ public class Prospector : MonoBehaviour
                 break;
         
             case eCardState.mine:
-
+       
+            if(cp == S.justdrawn){
+                S.justdrawn.state = eCardState.mine;
+            }
            
 
-            if(S.target == null){  
+            if(S.target == null && cp.selectable){  
                  S.target = cp;
                  S.target.selected.SetActive(true);
                  S.cardsClicked++;
+
+            
+
                   if(S.target.rank == 13){
                 S.MatchMove(S.target);
                 S.cardsClicked = 0;
@@ -308,11 +349,13 @@ public class Prospector : MonoBehaviour
                 
             }
 
-            if(S.targ2 == null && cp!= S.target){
+            if(S.targ2 == null && cp!= S.target && cp.selectable){
                 S.targ2 = cp;
                 S.targ2.selected.SetActive(true);
                 S.cardsClicked++;
               
+            } else {
+                return;
             }
                 // Clicking a card in the mine will check if it’s a valid play
                 bool validMatch = true;  // Initially assume that it’s valid 
@@ -335,7 +378,7 @@ public class Prospector : MonoBehaviour
                     }
 
                     if(S.justdrawn == S.target || S.justdrawn == S.targ2){
-                        S.MoveToDiscard(S.justdrawn);
+                      S.MoveToDiscard(S.justdrawn);
                     }
                      S.target = null; 
                      S.targ2 = null; 
@@ -351,10 +394,12 @@ public class Prospector : MonoBehaviour
                        // b
 
                 if (validMatch)
-                {        // If it’s a valid card
+                {       
+                   
+                     // If it’s a valid card
                     S.mine.Remove(cp);   // Remove it from the tableau List
                     // Make it the target card
-                    S.SetMineFaceUps();  // Be sure to add this line!!
+                    // Be sure to add this line!!
                    if (S.target.selected.activeSelf)
                     { S.target.selected.SetActive(false); 
                     }
@@ -363,12 +408,16 @@ public class Prospector : MonoBehaviour
                     }
 
                     S. MatchMove(S.target);
-                    S. MatchMove(S.targ2);
+                    if(S.targ2 != null){
+                    S.MatchMove(S.targ2);
+                    }
                     Debug.Log("valid match");
                     S.target = null;
                     S.targ2 = null; 
                     S.justdrawn = null;
                     S.cardsClicked = 0;
+
+                      S.SetMineFaceUps();
                 }
                      
 

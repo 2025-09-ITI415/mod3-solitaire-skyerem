@@ -34,8 +34,8 @@ public class Card : MonoBehaviour
         // If this is a Diamond or Heart, change the default Black color to Red
         if (suit == 'D' || suit == 'H')
         {
-            colS = "Red";
-            color = Color.red;
+            //colS = "Red";
+            //color = Color.red;
         }
 
         def = JsonParseDeck.GET_CARD_DEF(rank);
@@ -90,7 +90,7 @@ public class Card : MonoBehaviour
                 // Get the rank Sprite from the CardSpritesSO.RANK static field
                 _tSRend.sprite = CardSpritesSO.RANKS[rank];
                 // Set the color of the rank to match the suit
-                _tSRend.color = color;
+                //_tSRend.color = color;
             }
 
             // Make the Decorator Sprites render above the Card
