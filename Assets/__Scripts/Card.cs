@@ -163,7 +163,8 @@ public class Card : MonoBehaviour
         _tSRend = _tGO.GetComponent<SpriteRenderer>();
         _tSRend.sprite = _tSprite;// Assign the face Sprite to _tSRend
         _tSRend.sortingOrder = 1;// Set the sortingOrder
-        _tGO.transform.localPosition = Vector3.zero;
+        float halfHeight = _tSRend.bounds.size.y * 0.5f;
+        _tGO.transform.localPosition = new Vector3(0, -halfHeight, 0);
         _tGO.name = faceName;
     }
 

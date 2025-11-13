@@ -1,10 +1,11 @@
 {
     "decorators": [
         {
+
             "type": "letter",
             "loc": {
                 "x": -1.05,
-                "y": 1.42,
+                "y": 0,
                 "z": 0.0
             },
             "flip": false,
@@ -14,7 +15,7 @@
             "type": "suit",
             "loc": {
                 "x": -1.05,
-                "y": 1.03,
+                "y": 0.5,
                 "z": 0.0
             },
             "flip": false,
@@ -24,7 +25,7 @@
             "type": "letter",
             "loc": {
                 "x": 1.05,
-                "y": -1.42,
+                "y": 0,
                 "z": 0.0
             },
             "flip": true,
@@ -34,7 +35,7 @@
         "type": "suit",
         "loc": {
           "x": 1.05,
-          "y": -1.03,
+          "y": -0.5,
           "z": 0.0
         },
         "flip": true,
@@ -656,20 +657,84 @@
         {
             "rank": 11,
             "face": "FaceCard_11",
-            "pips": [
-            ]
+          "decorators": [
+            {
+              "type": "letter",
+              "loc": {
+                "x": 1.0,
+                "y": 1,
+                "z": 1
+              },
+              "flip": false,
+              "scale": 1.25
+            },
+            {
+              "type": "suit",
+              "loc": {
+                "x": 1,
+                "y": -0.5,
+                "z": 1
+              },
+              "flip": false,
+              "scale": 0.4
+            }
+          ],
+          "pips": []
         },
-        {
-            "rank": 12,
-            "face": "FaceCard_12",
-            "pips": [
-            ]
-        },
-        {
-            "rank": 13,
-            "face": "FaceCard_13",
-            "pips": [
-            ]
-        }
+      {
+        "rank": 12,
+        "face": "FaceCard_12",
+        "decorators": [
+          {
+            "type": "letter",
+            "loc": {
+              "x": 1.0,
+              "y": 1,
+              "z": 1
+            },
+            "flip": false,
+            "scale": 1.25
+          },
+          {
+            "type": "suit",
+            "loc": {
+              "x": 1,
+              "y": -0.5,
+              "z": 1
+            },
+            "flip": false,
+            "scale": 0.4
+          }
+        ],
+        "pips": []
+      },
+      {
+        "rank": 13,
+        "face": "FaceCard_13",
+        "decorators": [
+          {
+            "type": "letter",
+            "loc": {
+              "x": 1.0,
+              "y": 1,
+              "z": 1
+            },
+            "flip": false,
+            "scale": 1.25
+          },
+          {
+            "type": "suit",
+            "loc": {
+              "x": 1,
+              "y": -0.5,
+              "z": 1
+            },
+            "flip": false,
+            "scale": 0.4
+          }
+        ],
+        "pips": []
+      }
     ]
+
 }

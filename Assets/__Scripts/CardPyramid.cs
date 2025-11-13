@@ -236,32 +236,23 @@ public class Pyramid : MonoBehaviour
     /// <param name="cp">The CardProspector that was clicked</param>
     static public void CARD_CLICKED(CardProspector cp)
     {
-        // The reaction is determined by the state of the clicked card
         switch (cp.state)
         {
             case eCardState.target:
-                // Clicking the target card does nothing
                 break;
             case eCardState.drawpile:
-                // Clicking *any* card in the drawPile will draw the next card
-                // Call two methods on the Prospector Singleton S
-                P.MoveToTarget(P.Draw());  // Draw a new target card
-                P.UpdateDrawPile();          // Restack the drawPile
+                P.MoveToTarget(P.Draw());  
+                P.UpdateDrawPile(); 
                 break;
             case eCardState.mine:
-                // Clicking a card in the mine will check if it’s a valid play
-                bool validMatch = true;  // Initially assume that it’s valid 
-
-                // If the card is face-down, it’s not valid
+                bool validMatch = true;  
                 if (!cp.faceUp) validMatch = false;
-
-                // If it’s not an adjacent rank, it’s not valid
                 if (!cp.IsValidMatch(P.target)) validMatch = false;            // b
 
                 if (validMatch)
-                {        // If it’s a valid card
-                    P.mine.Remove(cp);   // Remove it from the tableau List
-                    P.MoveToTarget(cp);  // Make it the target card
+                {
+                    P.mine.Remove(cp);
+                    P.MoveToTarget(cp);
                 }
                 break;
         }
