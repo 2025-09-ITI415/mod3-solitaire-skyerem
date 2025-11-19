@@ -167,6 +167,7 @@ public class Prospector : MonoBehaviour
        if (justdrawn != null){
         justdrawn.selectable = false;     
          MoveToDiscard(justdrawn);
+           justdrawn = null;
        }
 
         // Use MoveToDiscard to move the target card to the correct location
