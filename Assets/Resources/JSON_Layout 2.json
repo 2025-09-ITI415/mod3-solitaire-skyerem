@@ -7,128 +7,37 @@
     "slots": [
         {
             "id": 0,
-            "x": 0,
-            "y": 1,
+            "x": -0.8,
+            "y": -3,
             "faceUp": true,
             "layer": "Row0",
-            "hiddenByString": "1,2"
+            "hiddenByString": ""
         },
         {
             "id": 1,
-            "x": -1.2,
-            "y": 0.37,
+            "x": -2.04,
+            "y": -3,
             "faceUp": true,
             "layer": "Row1",
-            "hiddenByString": "3,4"
+            "hiddenByString": ""
         },
         {
             "id": 2,
-            "x": 1.2,
-            "y": -0,
+            "x": -2.04,
+            "y": -0.8,
             "faceUp": true,
             "layer": "Row1",
-            "hiddenByString": "4,5"
+            "hiddenByString": ""
         },
         {
             "id": 3,
-            "x": -2,
-            "y": -1,
-            "faceUp": true,
+            "x": -0.8,
+            "y": -0.8,
+            "faceUp": false,
             "layer": "Row2",
-            "hiddenByString": "6,7"
-        },
-        {
-            "id": 4,
-            "x": 0,
-            "y": -1,
-            "faceUp": true,
-            "layer": "Row2",
-            "hiddenByString": "7,8"
-        },
-        {
-            "id": 5,
-            "x": 2,
-            "y": -1,
-            "faceUp": true,
-            "layer": "Row2",
-            "hiddenByString": "8,9"
-        },
-        {
-            "id": 6,
-            "x": -3.36,
-            "y": -2,
-            "faceUp": true,
-            "layer": "Row3",
-            "hiddenByString": "10,11"
-        },
-        {
-            "id": 7,
-            "x": -1,
-            "y": -2,
-            "faceUp": true,
-            "layer": "Row3",
-            "hiddenByString": "11,12"
-        },
-        {
-            "id": 8,
-            "x": 1.2,
-            "y": -2,
-            "faceUp": true,
-            "layer": "Row3",
-            "hiddenByString": "12,13"
-        },
-        
-        {
-            "id": 9,
-            "x": 3,
-            "y": -2,
-            "faceUp": true,
-            "layer": "Row3",
-            "hiddenByString": "13,14"
-        },
-        {
-            "id": 10,
-            "x": -4,
-            "y": -3,
-            "faceUp": true,
-            "layer": "Row4",
             "hiddenByString": ""
-        },
-        {
-            "id": 11,
-            "x": -2,
-            "y": -3,
-            "faceUp": true,
-            "layer": "Row4",
-            "hiddenByString": ""
-        },
-        {
-            "id": 12,
-            "x": -0.4,
-            "y": -3,
-            "faceUp": true,
-            "layer": "Row4",
-            "hiddenByString": ""
-        },
-        {
-            "id": 13,
-            "x": 2,
-            "y": -3,
-            "faceUp": true,
-            "layer": "Row4",
-            "hiddenByString": ""
-        },
-        {
-            "id": 14,
-            "x": 4,
-            "y": -3,
-            "faceUp": true,
-            "layer": "Row4",
-            "hiddenByString": ""
-
-            
         }
-
+        
        
     ],
     "drawPile": {
@@ -144,11 +53,17 @@
         "xStagger": 0
     },
 
-    "FinishPile": {
-        "x": -12,
-        "y": 5,
+    "hitPile": {
+        "x": 2,
+        "y": -3,
         "layer": "Target",
-        "xStagger": 0
+        "xStagger": 2
+    },
+     "DealerhitPile": {
+        "x": 2.18,
+        "y": -0.8,
+        "layer": "Target",
+        "xStagger": 2
     }
 
 }
