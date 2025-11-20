@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17f649412499541bda991cf4444574ff, type: 3}
   m_Name: CardSprites
   m_EditorClassIdentifier: 
-  cardBack: {fileID: 21300000, guid: 8ecf4828943064b3a96f6258b54c0f11, type: 3}
-  cardBackGold: {fileID: 21300000, guid: 8ecf4828943064b3a96f6258b54c0f11, type: 3}
+  cardBack: {fileID: -1114791001595092415, guid: ce660b24fa7512c4284bf66332c9096b, type: 3}
+  cardBackGold: {fileID: -1114791001595092415, guid: ce660b24fa7512c4284bf66332c9096b, type: 3}
   cardFront: {fileID: 21300000, guid: 873a7658b7ec742228520c7b15510f4d, type: 3}
   cardFrontGold: {fileID: 21300000, guid: 944dc539459fe4109b973bd4c97f68ee, type: 3}
   suitClub: {fileID: -4964194836321376918, guid: 759c394af583938409e775d432e940c1, type: 3}
